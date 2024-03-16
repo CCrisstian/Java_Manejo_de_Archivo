@@ -1,30 +1,65 @@
 <h1 align="center">Manejo de Archivo</h1>
 <p>En Java, la clase <b>'File'</b> se encuentra en el paquete java.io y proporciona una interfaz para interactuar con los archivos y directorios en el sistema de archivos de la computadora. Esta clase permite crear, eliminar, renombrar, verificar la existencia y recuperar información sobre archivos y directorios.</p>
 
-Algunas de las funcionalidades principales de la clase `File`:
--  <b>Creación y manipulación de archivos y directorios:</b>
-    -  Crear un objeto `File` que represente un archivo o directorio en el sistema de archivos.
-    -  La clase `File` permite crear nuevos archivos y directorios en el sistema de archivos.
-    -  También proporciona métodos para eliminar archivos y directorios existentes.
--  <b>Información sobre archivos y directorios:</b>
-    -  La clase `File` permite acceder a información sobre archivos y directorios, como su nombre, tamaño, ruta absoluta, etc.
-    -  Verificar si un objeto `File` representa un archivo o un directorio.
-    -  Se pueden listar los archivos y subdirectorios en un directorio específico.
--  <b>Operaciones en archivos y directorios:</b>
-    -  La clase `File` proporciona métodos para realizar operaciones comunes en archivos, como copiar, mover y renombrar.
-    -  También ofrece métodos para verificar la existencia de archivos y directorios, así como para verificar si son accesibles para lectura y escritura.
+Métodos de la clase `File`:
+-  `canExecute()`: Verifica si el archivo puede ejecutarse.
+-  `canRead()`: Verifica si el archivo puede leerse.
+-  `canWrite()`: Verifica si el archivo puede escribirse.
+-  `compareTo(File pathname)`: Compara la ruta de este archivo con la ruta especificada.
+-  `delete()`: Borra el archivo.
+-  `createNewFile()`: Crea un nuevo archivo en la ruta especificada.
+-  `deleteOnExit()`: Programa el archivo para que se borre cuando finalice la aplicación.
+-  `equals(Object obj)`: Compara este objeto `File` con otro objeto para verificar si son iguales.
+-  `exists()`: Verifica si el archivo existe.
+-  `getAbsoluteFile()`: Devuelve una instancia de `File` que representa la ruta absoluta del archivo.
+-  `getAbsolutePath()`: Devuelve la ruta absoluta del archivo como una cadena.
+-  `getCanonicalPath()`: Devuelve la ruta canónica del archivo como una cadena.
+-  `getFreeSpace()`: Devuelve el espacio libre en el sistema de archivos que contiene el archivo.
+-  `getName()`: Devuelve el nombre del archivo o directorio representado por este objeto `File`.
+-  `getParent()`: Devuelve el nombre del directorio padre como una cadena.
+-  `getParentFile()`: Devuelve un objeto `File` que representa el directorio padre del archivo.
+-  `getPath()`: Devuelve la ruta del archivo como una cadena.
+-  `getTotalSpace()`: Devuelve el tamaño total del sistema de archivos que contiene el archivo.
+-  `getUsableSpace()`: Devuelve el espacio disponible en el sistema de archivos que contiene el archivo.
+-  `hashCode()`: Devuelve el código hash del objeto `File`.
+-  `isAbsolute()`: Verifica si la ruta del archivo es absoluta.
+-  `isDirectory()`: Verifica si el objeto `File` representa un directorio.
+-  `isFile()`: Verifica si el objeto `File` representa un archivo.
+-  `isHidden()`: Verifica si el archivo está oculto.
+-  `lastModified()`: Devuelve la última vez que se modificó el archivo, en milisegundos desde el 1 de enero de 1970.
+-  `length()`: Devuelve el tamaño del archivo en bytes.
+-  `list()`: Devuelve un array de cadenas que representan los nombres de los archivos y directorios en el directorio representado por este objeto `File`.
+-  `list(FilenameFilter filter)`: Devuelve un array de cadenas que representan los nombres de los archivos y directorios que pasan el filtro especificado.
+-  `listFiles()`: Devuelve un array de objetos `File` que representan los archivos y directorios en el directorio representado por este objeto `File`.
+-  `listFiles(FileFilter filter)`: Devuelve un array de objetos `File` que representan los archivos y directorios que pasan el filtro especificado.
+-  `listFiles(FilenameFilter filter)`: Devuelve un array de objetos `File` que representan los archivos y directorios cuyos nombres pasan el filtro especificado.
+-  `mkdir()`: Crea el directorio representado por este objeto `File`.
+-  `mkdirs()`: Crea el directorio representado por este objeto `File`, junto con cualquier directorio padre que sea necesario.
+-  `renameTo(File dest)`: Renombra el archivo representado por este objeto `File` al nombre especificado por el objeto `File` de destino.
+-  `setExecutable(boolean executable)`: Establece si el archivo es ejecutable.
+-  `setExecutable(boolean executable, boolean ownerOnly)`: Establece si el archivo es ejecutable, opcionalmente solo para el propietario.
+-  `setLastModified(long time)`: Establece la última vez que se modificó el archivo.
+-  `setReadable(boolean readable)`: Establece si el archivo es legible.
+-  `setReadable(boolean readable, boolean ownerOnly)`: Establece si el archivo es legible, opcionalmente solo para el propietario.
+-  `setReadOnly()`: Establece el archivo como de solo lectura.
+-  `setWritable(boolean writable)`: Establece si el archivo es escribible.
+-  `setWritable(boolean writable, boolean ownerOnly)`: Establece si el archivo es escribible, opcionalmente solo para el propietario.
+-  `toPath()`: Devuelve un objeto `Path` que representa la ruta de este archivo.
 
 <h2 align="center">'FileWriter'</h2>
 <p>La clase <b>'FileWriter'</b> en Java, que se encuentra en el paquete java.io, es una subclase de <b>'Writer'</b> y se utiliza para escribir caracteres en un archivo de texto. Esta clase se utiliza principalmente para escribir datos de texto en archivos de texto. <b>'FileWriter'</b> es capaz de escribir caracteres directamente en un archivo, lo que lo hace útil para la escritura de archivos de texto simples.</p>
 
-Algunas características clave de la clase `FileWriter`:
--    <b>Escritura de caracteres en un archivo:</b>
-        -    `FileWriter` proporciona métodos para escribir caracteres en un archivo de texto. Se puede escribir un solo carácter, una cadena de caracteres o un arreglo de caracteres en el archivo.
--    <b>Apertura y cierre automático de archivos:</b>
-        -    `FileWriter` se encarga de abrir y cerrar automáticamente el archivo. Esto significa que no se necesita preocuparse por abrir o cerrar explícitamente el archivo, ya que `FileWriter` maneja estas operaciones.
--    <b>Flujo de escritura:</b>
-        -    `FileWriter` utiliza un flujo de escritura para escribir caracteres en el archivo. Los caracteres que se escriben se almacenan en un `búfer` interno antes de escribirse físicamente en el archivo. Se puede forzar la escritura del `búfer` en el archivo utilizando el método `flush()`.
--    <b>Codificación de caracteres:</b>
-        -    Se puede especificar la codificación de caracteres que se utilizará al escribir en el archivo. Por defecto, se utiliza la codificación del sistema, pero se puede especificar una codificación específica si se lo desea.
--    <b>Manejo de excepciones:</b>
-        -    Al trabajar con `FileWriter`, se debe manejar las posibles excepciones que pueden ocurrir durante la escritura en el archivo, como `IOException`. Es importante cerrar correctamente el `FileWriter` después de su uso, preferiblemente utilizando un bloque `try-with-resources` para asegurar su cierre adecuado.
+Métodos de la clase `FileWriter`:
+-  `append(char c)`: Añade un solo carácter al final del archivo.
+-  `append(CharSequence csq)`: Añade una secuencia de caracteres al final del archivo.
+-  `append(CharSequence csq, int start, int end)`: Añade una porción de una secuencia de caracteres al final del archivo, comenzando desde el índice start hasta end.
+-  `close()`: Cierra el flujo de escritura, liberando cualquier recurso asociado.
+-  `flush()`: Limpia cualquier búfer de salida, asegurando que los datos pendientes se escriban al archivo.
+-  `getEncoding()`: Devuelve la codificación de caracteres utilizada para escribir en el archivo.
+-  `write(int c)`: Escribe un solo carácter en el archivo.
+-  `write(String str)`: Escribe una cadena de caracteres en el archivo.
+-  `write(char[] cbuf)`: Escribe un arreglo de caracteres en el archivo.
+-  `write(String str, int off, int len)`: Escribe una porción de una cadena de caracteres en el archivo, comenzando desde el índice off hasta off + len.
+-  `write(char[] cbuf, int off, int len)`: Escribe una porción de un arreglo de caracteres en el archivo, comenzando desde el índice off hasta off + len.
+-  `equals(Object obj)`: Compara este objeto FileWriter con otro objeto para verificar si son iguales.
+
