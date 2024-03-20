@@ -82,3 +82,65 @@ Métodos de la clase `BufferedWriter`:
 -  `hashCode()`: Devuelve el código hash del objeto `BufferedWriter`.
 -  `toString()`: Devuelve una representación en cadena del objeto `BufferedWriter`.
 
+<h2 align="center">'PrintWriter'</h2>
+<p>La clase <b>PrintWriter</b> en Java es una subclase de Writer que proporciona métodos convenientes para escribir representaciones de varios tipos de datos en un flujo de caracteres. Es especialmente útil para la escritura de texto formateado en archivos y otras salidas de texto, como la consola o sockets de red.</p>
+
+Métodos de la clase `PrintWriter`:
+-  `printn(int x)`: Escribe el valor entero `x` en el flujo de salida sin agregar un salto de línea al final.
+-  `print(boolean b)`: Escribe el valor booleano `b` en el flujo de salida.
+-  `println(char x)`: Escribe el carácter `x` en el flujo de salida, seguido de un salto de línea.
+-  `println(float x)`: Escribe el valor de punto flotante `x` en el flujo de salida, seguido de un salto de línea.
+-  `printin(Long x)`: Escribe el valor largo `x` en el flujo de salida.
+-  `print(char c)`: Escribe el carácter `c` en el flujo de salida.
+-  `print(int i)`: Escribe el valor entero `i` en el flujo de salida.
+-  `print(long L)`: Escribe el valor largo `L` en el flujo de salida.
+-  `print(float f)`: Escribe el valor de punto flotante `f` en el flujo de salida.
+-  `print(double d)`: Escribe el valor de punto flotante de doble precisión `d` en el flujo de salida.
+-  `print(char[] s)`: Escribe el arreglo de caracteres `s` en el flujo de salida.
+-  `print(String s)`: Escribe la cadena de caracteres `s` en el flujo de salida.
+-  `print(Object obj)`: Escribe la representación de cadena del objeto `obj` en el flujo de salida.
+-  `println(char[] x)`: Escribe el arreglo de caracteres `x` en el flujo de salida, seguido de un salto de línea.
+-  `println(double x)`: Escribe el valor de punto flotante de doble precisión `x` en el flujo de salida, seguido de un salto de línea.
+-  `println(Object x)`: Escribe la representación de cadena del objeto `x` en el flujo de salida, seguido de un salto de línea.
+-  `println(String x)`: Escribe la cadena de caracteres `x` en el flujo de salida, seguido de un salto de línea.
+-  `println(boolean x)`: Escribe el valor booleano `x` en el flujo de salida, seguido de un salto de línea.
+-  `append(char c)`: Agrega un solo carácter al flujo de salida.
+-  `append(CharSequence csq)`: Agrega una secuencia de caracteres al flujo de salida.
+-  `append(CharSequence csq, int start, int end)`: Agrega una porción de una secuencia de caracteres al flujo de salida, comenzando desde el índice `start` hasta `end`.
+-  `checkError()`: Verifica si se ha producido algún error en el flujo de salida.
+-  `close()`: Cierra el flujo de salida.
+-  `flush()`: Limpia cualquier búfer de salida, asegurando que los datos pendientes se escriban en el flujo de salida.
+-  `format(String format, Object ... args)`: Formatea una cadena utilizando una especificación de formato y escribe el resultado en el flujo de salida.
+-  `format(Locale l, String format, Object ... args)`: Formatea una cadena utilizando una especificación de formato y escribe el resultado en el flujo de salida utilizando la configuración regional especificada.
+-  `printf(String format, Object ... args)`: Es un método conveniente que es equivalente a `format(String, Object ...)`. 
+-  `printf(Locale l, String format, Object ... args)`: Es un método conveniente que es equivalente a `format(Locale, String, Object ...)`. 
+-  `println()`: Escribe un salto de línea en el flujo de salida.
+-  `write(int c)`: Escribe un solo carácter en el flujo de salida.
+-  `write(String s)`: Escribe una cadena de caracteres en el flujo de salida.
+-  `write(char[] buf)`: Escribe un arreglo de caracteres en el flujo de salida.
+-  `write(String s, int off, int len)`: Escribe una porción de una cadena de caracteres en el flujo de salida, comenzando desde el índice `off` hasta `off + len`.
+-  `write(char[] buf, int off, int len)`: Escribe una porción de un arreglo de caracteres en el flujo de salida, comenzando desde el índice `off` hasta `off + len`.
+-  `equals(Object obj)`: Compara este objeto `PrintWriter` con otro objeto para verificar si son iguales.
+-  `hashCode()`: Devuelve el código hash del objeto `PrintWriter`.
+-  `toString()`: Devuelve una representación en cadena del objeto `PrintWriter`.
+
+<h2 align="center">'BufferedReader'</h2>
+<p>La clase <b>BufferedReader</b> en Java se utiliza para leer texto de una fuente de entrada de caracteres, como un archivo, un <b>InputStreamReader</b>, o cualquier otro objeto que implemente la interfaz <b>Reader.</b> Proporciona un búfer interno que mejora el rendimiento de la lectura al minimizar el número de accesos al sistema de archivos o la red.</p>
+
+Métodos de  `BufferedReader`:
+-  `close()`: Cierra el flujo de entrada y libera los recursos asociados.
+-  `lines()`: Devuelve un flujo (`Stream`) de líneas del texto leído por este `BufferedReader`.
+-  `mark(int readAheadLimit)`: Marca la posición actual en el flujo de entrada. Permite regresar a esta posición después de haber leído un número limitado de caracteres.
+-  `read()`: Lee un solo carácter de la fuente de entrada y devuelve su valor como un entero. Si llega al final del flujo de entrada, devuelve -1.
+-  `read(char[] cbuf, int off, int len)`: Lee caracteres en un arreglo de caracteres `cbuf`, comenzando en el índice `off` y leyendo hasta `len` caracteres. Devuelve el número de caracteres leídos o -1 si se alcanza el final del flujo de entrada.
+-  `markSupported()`: Indica si este `BufferedReader` admite el marcado del flujo de entrada.
+-  `readLine()`: Lee una línea completa de texto del flujo de entrada y la devuelve como una cadena. Devuelve `null` si se alcanza el final del flujo de entrada.
+-  `read(CharBuffer target)`: Lee caracteres en un buffer `CharBuffer`. Devuelve el número de caracteres leídos o -1 si se alcanza el final del flujo de entrada.
+-  `read(char[] cbuf)`: Lee caracteres en un arreglo de caracteres `cbuf`. Devuelve el número de caracteres leídos o -1 si se alcanza el final del flujo de entrada.
+-  `ready()`: Comprueba si hay caracteres disponibles para ser leídos sin bloquear.
+-  `reset()`: Restablece el flujo de entrada al estado marcado previamente por `mark()`.
+-  `skip(long n)`: Omite `n` caracteres en el flujo de entrada y devuelve el número de caracteres realmente omitidos.
+-  `transferTo(Writer out)`: Transfiere todos los caracteres restantes en el flujo de entrada al `Writer` especificado.
+-  `equals(Object obj)`: Compara este objeto `BufferedReader` con otro objeto para verificar si son iguales.
+-  `hashCode()`: Devuelve el código hash del objeto `BufferedReader`.
+-  `toString()`: Devuelve una representación en cadena del objeto `BufferedReader`.
