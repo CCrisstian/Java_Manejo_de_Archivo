@@ -165,7 +165,7 @@ Métodos de  `BufferedReader`:
 -  `hashCode()`: Devuelve el código hash del objeto `BufferedReader`.
 -  `toString()`: Devuelve una representación en cadena del objeto `BufferedReader`.
 
-<h2 align="cenet">'Scanner'</h2>
+<h2 align="center">'Scanner'</h2>
 <p>La clase <b>Scanner</b> en Java se utiliza para analizar tipos primitivos y cadenas de caracteres desde diversas fuentes de entrada, como archivos, cadenas de texto, o flujos de entrada (InputStream). Proporciona métodos simples y convenientes para leer y analizar datos en un formato específico.</p>
 
 Métodos de la clase `Scanner`:
