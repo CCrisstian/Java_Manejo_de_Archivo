@@ -164,3 +164,69 @@ Métodos de  `BufferedReader`:
 -  `equals(Object obj)`: Compara este objeto `BufferedReader` con otro objeto para verificar si son iguales.
 -  `hashCode()`: Devuelve el código hash del objeto `BufferedReader`.
 -  `toString()`: Devuelve una representación en cadena del objeto `BufferedReader`.
+
+<h2 align="cenet">'Scanner'</h2>
+<p>La clase <b>Scanner</b> en Java se utiliza para analizar tipos primitivos y cadenas de caracteres desde diversas fuentes de entrada, como archivos, cadenas de texto, o flujos de entrada (InputStream). Proporciona métodos simples y convenientes para leer y analizar datos en un formato específico.</p>
+
+Métodos de la clase `Scanner`:
+-  `hasNext()`: Verifica si hay más elementos disponibles para ser leídos.
+-  `hasNext(String pattern)`: Verifica si hay más elementos disponibles para ser leídos que coincidan con el patrón especificado.
+-  `hasNext(Pattern pattern)`: Verifica si hay más elementos disponibles para ser leídos que coincidan con el patrón de expresión regular especificado.
+-  `close()`: Cierra el `Scanner`.
+-  `toString()`: Devuelve una representación en cadena del `Scanner`.
+-  `delimiter()`: Devuelve el delimitador actual utilizado por el `Scanner`.
+-  `findAll(Pattern pattern)`: Encuentra todas las ocurrencias de la expresión regular especificada en la entrada actual.
+-  `findAll(String patString)`: Encuentra todas las ocurrencias de la cadena de patrón especificada en la entrada actual.
+-  `findInLine(String pattern)`: Encuentra la próxima ocurrencia de la expresión regular especificada en la misma línea que la posición actual del `Scanner`.
+-  `findInLine(Pattern pattern)`: Encuentra la próxima ocurrencia de la expresión regular especificada en la misma línea que la posición actual del `Scanner`.
+-  `findWithinHorizon(String pattern, int horizon)`: Encuentra la próxima ocurrencia de la expresión regular especificada dentro del horizonte de búsqueda especificado.
+-  `findWithinHorizon(Pattern pattern, int horizon)`: Encuentra la próxima ocurrencia de la expresión regular especificada dentro del horizonte de búsqueda especificado.
+-  `hasNextBigDecimal()`: Verifica si hay más tokens de tipo `BigDecimal` disponibles para ser leídos.
+-  `hasNextBigInteger()`: Verifica si hay más tokens de tipo `BigInteger` disponibles para ser leídos.
+-  `hasNextBigInteger(int radix)`: Verifica si hay más tokens de tipo `BigInteger` con la base especificada disponibles para ser leídos.
+-  `hasNextBoolean()`: Verifica si hay más tokens de tipo `Boolean` disponibles para ser leídos.
+-  `hasNextByte()`: Verifica si hay más tokens de tipo `Byte` disponibles para ser leídos.
+-  `hasNextByte(int radix)`: Verifica si hay más tokens de tipo `Byte` con la base especificada disponibles para ser leídos.
+-  `hasNextDouble()`: Verifica si hay más tokens de tipo `Double` disponibles para ser leídos.
+-  `hasNextFloat()`: Verifica si hay más tokens de tipo `Float` disponibles para ser leídos.
+-  `hasNextInt()`: Verifica si hay más tokens de tipo `Integer` disponibles para ser leídos.
+-  `hasNextInt(int radix)`: Verifica si hay más tokens de tipo `Integer` con la base especificada disponibles para ser leídos.
+-  `hasNextLine()`: Verifica si hay más líneas disponibles para ser leídas.
+-  `hasNextLong()`: Verifica si hay más tokens de tipo `Long` disponibles para ser leídos.
+-  `hasNextLong(int radix)`: Verifica si hay más tokens de tipo `Long` con la base especificada disponibles para ser leídos.
+-  `hasNextShort()`: Verifica si hay más tokens de tipo `Short` disponibles para ser leídos.
+-  `hasNextShort(int radix)`: Verifica si hay más tokens de tipo `Short` con la base especificada disponibles para ser leídos.
+-  `ioException()`: Devuelve la excepción de E/S si ocurrió durante la operación de entrada.
+-  `Locale()`: Devuelve el `Locale` utilizado por el `Scanner`.
+-  `match()`: Devuelve el patrón de la última operación de búsqueda, compilado como una expresión regular.
+-  `next()`: Lee el próximo token de la entrada.
+-  `next(String pattern)`: Lee el próximo token que coincida con el patrón especificado.
+-  `next(Pattern pattern)`: Lee el próximo token que coincida con el patrón de expresión regular especificado.
+-  `nextBigDecimal()`: Lee el próximo token como un `BigDecimal`.
+-  `nextBigInteger()`: Lee el próximo token como un `BigInteger`.
+-  `nextBigInteger(int radix)`: Lee el próximo token como un `BigInteger` con la base especificada.
+-  `nextBoolean()`: Lee el próximo token como un `Boolean`.
+-  `nextByte()`: Lee el próximo token como un `Byte`.
+-  `nextByte(int radix)`: Lee el próximo token como un `Byte` con la base especificada.
+-  `nextDouble()`: Lee el próximo token como un `Double`.
+-  `nextFloat()`: Lee el próximo token como un `Float`.
+-  `nextInt()`: Lee el próximo token como un `Integer`.
+-  `nextInt(int radix)`: Lee el próximo token como un `Integer` con la base especificada.
+-  `nextLine()`: Lee la próxima línea de la entrada.
+-  `nextLong()`: Lee el próximo token como un `Long`.
+-  `nextLong(int radix)`: Lee el próximo token como un `Long` con la base especificada.
+-  `nextShort()`: Lee el próximo token como un `Short`.
+-  `nextShort(int radix)`: Lee el próximo token como un `Short` con la base especificada.
+-  `radix()`: Devuelve la base numérica utilizada por el `Scanner`.
+-  `remove()`: Elimina el último token leído.
+-  `reset()`: Restablece el `Scanner` a un estado inicial sin tokens.
+-  `skip(String pattern)`: Omite cualquier token que coincida con el patrón especificado.
+-  `skip(Pattern pattern)`: Omite cualquier token que coincida con el patrón de expresión regular especificado.
+-  `tokens()`: Devuelve una representación del `Scanner` como un flujo de tokens.
+-  `useDelimiter(String pattern)`: Establece el delimitador de tokens como la expresión regular especificada.
+-  `useDelimiter(Pattern pattern)`: Establece el delimitador de tokens como el patrón de expresión regular especificado.
+-  `useLocale(Locale locale)`: Establece el `Locale` del `Scanner`.
+-  `useRadix(int radix)`: Establece la base numérica para la lectura de enteros.
+-  `forEachRemaining(Consumer <? super String> action)`: Procesa los tokens restantes, uno por uno, utilizando la operación especificada.
+-  `equals(Object obj)`: Compara este objeto `Scanner` con otro objeto para verificar si son iguales.
+-  `hashCode()`: Devuelve el código hash del `Scanner`.
