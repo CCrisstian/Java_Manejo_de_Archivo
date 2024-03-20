@@ -124,6 +124,26 @@ Métodos de la clase `PrintWriter`:
 -  `hashCode()`: Devuelve el código hash del objeto `PrintWriter`.
 -  `toString()`: Devuelve una representación en cadena del objeto `PrintWriter`.
 
+<h2 align="center">'FileReader'</h2>
+<p>La clase <b>FileReader</b> en Java se utiliza para leer caracteres de un archivo de texto. Esta clase es una subclase de <b>InputStreamReader</b>, que a su vez es una subclase de <b>Reader</b>. <b>FileReader</b> es especialmente útil cuando se necesita leer datos de un archivo de texto de manera eficiente y sencilla.</p>
+
+Métodos de la clase `FileReader:
+-  `close()`: Cierra el flujo de entrada y libera los recursos asociados.
+-  `getEncoding()`: Devuelve la codificación de caracteres utilizada por este `FileReader`.
+-  `mark(int readAheadLimit)`: Marca la posición actual en el flujo de entrada. Permite regresar a esta posición después de haber leído un número limitado de caracteres.
+-  `read()`: Lee un solo carácter de la fuente de entrada y devuelve su valor como un entero. Si llega al final del flujo de entrada, devuelve -1.
+-  `read(char[] cbuf)`: Lee caracteres del flujo de entrada y los coloca en el arreglo de caracteres `cbuf`. Devuelve el número de caracteres leídos o -1 si se alcanza el final del flujo de entrada.
+-  `markSupported()`: Indica si este `FileReader` admite el marcado del flujo de entrada.
+-  `read(CharBuffer target)`: Lee caracteres y los coloca en el buffer `CharBuffer`. Devuelve el número de caracteres leídos o -1 si se alcanza el final del flujo de entrada.
+-  `read(char[] cbuf, int off, int len)`: Lee caracteres del flujo de entrada y los coloca en el arreglo de caracteres `cbuf`, comenzando en el índice `off` y leyendo hasta `len` caracteres. Devuelve el número de caracteres leídos o -1 si se alcanza el final del flujo de entrada.
+-  `ready()`: Comprueba si hay caracteres disponibles para ser leídos sin bloquear.
+-  `reset()`: Restablece el flujo de entrada al estado marcado previamente por `mark()`.
+-  `skip(long n)`: Omite `n` caracteres en el flujo de entrada y devuelve el número de caracteres realmente omitidos.
+-  `transferTo(Writer out)`: Transfiere todos los caracteres restantes en el flujo de entrada al `Writer` especificado.
+-  `equals(Object obj)`: Compara este objeto `FileReader` con otro objeto para verificar si son iguales.
+-  `hashCode()`: Devuelve el código hash del objeto `FileReader`.
+-  `toString()`: Devuelve una representación en cadena del objeto `FileReader`.
+
 <h2 align="center">'BufferedReader'</h2>
 <p>La clase <b>BufferedReader</b> en Java se utiliza para leer texto de una fuente de entrada de caracteres, como un archivo, un <b>InputStreamReader</b>, o cualquier otro objeto que implemente la interfaz <b>Reader.</b> Proporciona un búfer interno que mejora el rendimiento de la lectura al minimizar el número de accesos al sistema de archivos o la red.</p>
 
