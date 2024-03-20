@@ -63,3 +63,22 @@ Métodos de la clase `FileWriter`:
 -  `write(char[] cbuf, int off, int len)`: Escribe una porción de un arreglo de caracteres en el archivo, comenzando desde el índice off hasta off + len.
 -  `equals(Object obj)`: Compara este objeto FileWriter con otro objeto para verificar si son iguales.
 
+<h2 align="center">'BufferedWriter'</h2>
+<p><b>BufferedWriter</b> en Java es una clase que se utiliza para escribir texto en un flujo de salida de caracteres de forma eficiente, es decir, es capaz de escribir grandes cantidades de datos de forma rápida en un archivo. Esta clase es una subclase de <b>Writer</b> y proporciona un búfer interno que acumula los datos antes de escribirlos en el archivo subyacente. Al utilizar un búfer interno, <b>BufferedWriter</b> reduce el número de accesos al sistema de archivos, lo que mejora el rendimiento de la escritura.</p>
+
+Métodos de la clase `BufferedWriter`:
+-  `close()`: Cierra el flujo de salida y libera los recursos asociados.
+-  `append(char c)`: Agrega un solo carácter al flujo de salida.
+-  `append(CharSequence csq)`: Agrega una secuencia de caracteres al flujo de salida.
+-  `append(CharSequence csq, int start, int end)`: Agrega una porción de una secuencia de caracteres al flujo de salida, comenzando desde el índice `start` hasta `end`.
+-  `flush()`: Limpia cualquier `búfer` de salida, asegurando que los datos pendientes se escriban en el flujo de salida.
+-  `newLine()`: Escribe una nueva línea en el flujo de salida.
+-  `write(int c)`: Escribe un solo carácter en el flujo de salida.
+-  `write(String s, int off, int len)`: Escribe una porción de una cadena de caracteres en el flujo de salida, comenzando desde el índice off hasta `off `+ `len`.
+-  `write(char[] cbuf, int off, int len)`: Escribe una porción de un arreglo de caracteres en el flujo de salida, comenzando desde el índice off hasta `off `+ `len`.
+-  `write(String str)`: Escribe una cadena de caracteres completa en el flujo de salida.
+-  `write(char[] cbuf)`: Escribe un arreglo completo de caracteres en el flujo de salida.
+-  `equals(Object obj)`: Compara este objeto `BufferedWriter` con otro objeto para verificar si son iguales.
+-  `hashCode()`: Devuelve el código hash del objeto `BufferedWriter`.
+-  `toString()`: Devuelve una representación en cadena del objeto `BufferedWriter`.
+
