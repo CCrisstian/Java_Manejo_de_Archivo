@@ -127,7 +127,7 @@ Métodos de la clase `PrintWriter`:
 <h2 align="center">'FileReader'</h2>
 <p>La clase <b>FileReader</b> en Java se utiliza para leer caracteres de un archivo de texto. Esta clase es una subclase de <b>InputStreamReader</b>, que a su vez es una subclase de <b>Reader</b>. <b>FileReader</b> es especialmente útil cuando se necesita leer datos de un archivo de texto de manera eficiente y sencilla.</p>
 
-Métodos de la clase `FileReader:
+Métodos de la clase `FileReader`:
 -  `close()`: Cierra el flujo de entrada y libera los recursos asociados.
 -  `getEncoding()`: Devuelve la codificación de caracteres utilizada por este `FileReader`.
 -  `mark(int readAheadLimit)`: Marca la posición actual en el flujo de entrada. Permite regresar a esta posición después de haber leído un número limitado de caracteres.
