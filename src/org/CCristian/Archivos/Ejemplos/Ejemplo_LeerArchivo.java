@@ -2,18 +2,11 @@ package org.CCristian.Archivos.Ejemplos;
 
 import org.CCristian.Archivos.Ejemplos.Servicio.Archivo_Servicio;
 
-
-public class Ejemplo_CrearArchivo {
+public class Ejemplo_LeerArchivo {
     public static void main(String[] args) {
-
-        String nombreArchivo = "C:\\Users\\criss\\Desktop\\carpeta\\Java.txt";
-        /*Ruta\\Carpeta\\Nombre del archivo*/
 
         Archivo_Servicio servicio = new Archivo_Servicio();
 
-        servicio.crearArchivo_2(nombreArchivo);
-
-
-
+        System.out.println(servicio.leerArchivo_2("C:\\Users\\criss\\Desktop\\carpeta\\Java.txt"));
     }
 }
